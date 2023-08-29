@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9FB3350-6941-429A-BCF8-7F88E6B8B677}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Situatii_Note_Studenti</RootNamespace>
+    <AssemblyName>Situatii_Note_Studenti</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdaugareDisciplinaNoua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdaugareDisciplinaNoua.Designer.cs">
+      <DependentUpon>AdaugareDisciplinaNoua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdaugareStudentNou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdaugareStudentNou.Designer.cs">
+      <DependentUpon>AdaugareStudentNou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Centralizator.cs" />
+    <Compile Include="CitireXML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CitireXML.Designer.cs">
+      <DependentUpon>CitireXML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Disciplina.cs" />
+    <Compile Include="AdaugareNotaStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdaugareNotaStudent.Designer.cs">
+      <DependentUpon>AdaugareNotaStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraficNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraficNote.Designer.cs">
+      <DependentUpon>GraficNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IAveregeable.cs" />
+    <Compile Include="ListaDiscipline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaDiscipline.Designer.cs">
+      <DependentUpon>ListaDiscipline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaNote.Designer.cs">
+      <DependentUpon>ListaNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaStudenti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaStudenti.Designer.cs">
+      <DependentUpon>ListaStudenti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniulPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniulPrincipal.Designer.cs">
+      <DependentUpon>MeniulPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScriereXML.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScriereXML.Designer.cs">
+      <DependentUpon>ScriereXML.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student.cs" />
+    <Compile Include="DataSiOra.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataSiOra.Designer.cs">
+      <DependentUpon>DataSiOra.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdaugareDisciplinaNoua.resx">
+      <DependentUpon>AdaugareDisciplinaNoua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdaugareNotaStudent.resx">
+      <DependentUpon>AdaugareNotaStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdaugareStudentNou.resx">
+      <DependentUpon>AdaugareStudentNou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CitireXML.resx">
+      <DependentUpon>CitireXML.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraficNote.resx">
+      <DependentUpon>GraficNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaDiscipline.resx">
+      <DependentUpon>ListaDiscipline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaNote.resx">
+      <DependentUpon>ListaNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaStudenti.resx">
+      <DependentUpon>ListaStudenti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniulPrincipal.resx">
+      <DependentUpon>MeniulPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DataSiOra.resx">
+      <DependentUpon>DataSiOra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScriereXML.resx">
+      <DependentUpon>ScriereXML.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
